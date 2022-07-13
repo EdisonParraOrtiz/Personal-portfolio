@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,100&display=swap');
 
+
+
+body{
+    background-color: rgb(40, 40, 40);
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +23,7 @@ html{
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    
 }
 
 #inicio .contenido header{
@@ -26,19 +34,21 @@ html{
     top: 0;
 }
 
+/* modificar en media core verrsion mobile*/
+#inicio .contenido{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
 #inicio .contenido header .contenido-header{
     max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px; 
 
-}
-
-#inicio .contenido header .contenido-header h1{
-    text-align: center;
-    color: rgb(250, 177, 81);
 }
 
 #inicio .contenido header .contenido-header nav ul{
@@ -58,70 +68,6 @@ html{
 #inicio .contenido header .contenido-header nav ul a:hover{
     color: rgb(250, 176, 111);
 }
-
-#inicio .contenido .presentacion{
-    max-width: 1100px;
-    height: 100vh;
-    margin: auto;
-    padding: 0px;
-    color: #fff;
-    columns: rgb(250, 177, 81);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#inicio .contenido .presentacion .bienvenida{
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-#inicio .contenido .presentacion h2{
-    font-size: 55px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-#inicio .contenido .presentacion h2 span{
-    font-size: 35px;
-    color: rgb(246, 143, 8);
-}
-
-#inicio .contenido .presentacion .descripcion{
-    max-width: 700px;
-    margin: 25px auto;
-    font-size: 18px;
-    text-align: center;
-}
-
-
-#inicio .contenido .presentacion a{
-    text-decoration: none;
-    display: inline-block;
-    margin: 25px;
-    padding: 20px 25px;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 2.5s;
-}
-
-
-#inicio .contenido .presentacion a:hover{
-    background-color:rgb(250, 176, 111) ;
-}
-
-
-#icono-nav{
-    color: #fff;
-    display: none;
-}
-
 
 #inicio .contenido header .contenido-header .redes a{
     text-decoration: none;
@@ -143,6 +89,158 @@ html{
     font-size:20px;
 }
 
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+
+
+
+
+#inicio .contenido .contenedor-presentacion{
+    max-width: 1100px;
+    width: 100%;
+    height: 660px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto); 
+    grid-template-areas: "foto, presentacion";
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .contenedor-presentacion .foto{
+    grid-area: "foto";
+    align-items: center;
+    height: auto;
+    border: none;
+  
+}
+
+#inicio  img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border: 5px solid rgb(244, 140, 49) ;
+}
+
+#inicio .contenido .contenedor-presentacion .presentacion{
+    grid-area: "presentacion";
+    align-items: center;
+    padding: 0px;
+}
+
+
+
+#inicio .contenido .presentacion{
+    max-width: auto;
+    height: auto;
+    padding: 0px;
+    color: #fff;
+    columns: rgb(250, 177, 81);
+    grid-area: "presentacion";
+    
+}
+   
+
+
+
+
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion .bienvenida-nombre{
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 30px;
+    color: #fff;
+}
+
+#inicio .contenido .presentacion h2 span{
+    font-size: 30px;
+    color: rgb(246, 143, 8);
+}
+
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+#inicio .contenido .presentacion .hacia-portafolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 10px 10px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    transition: 2.5s;
+    font-size: 16px;
+}
+
+
+#inicio .contenido .presentacion a:hover{
+    background-color:rgb(250, 176, 111) ;
+}
+
+
+
+@media screen and (max-width:780px) {
+    #inicio .contenedor-presentacion{
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+    #icono-nav{
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+
+}
 
 
 
@@ -161,72 +259,79 @@ html{
     display: flex;
 }
 
-#sobremi .contenedor-foto{
-    max-width: 400px;
-    margin-right: 80px;
-}
-
-#sobremi .contenedor-foto img {
-    padding: 2px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #fff;
-}
-
 #sobremi .sobremi{
     margin: 0px 40px;  
 }
 
 #sobremi .sobremi .titulo-seccion{
-    font-size: 22px;
+    font-size: 24px;
     text-transform: uppercase;
-    color: black;
-    text-decoration: underline;
-    text-decoration: rgb(250, 176, 111);
-    text-decoration-thickness: 5px;
- 
-}
-
-#sobremi .sobremi h2{
-    font-size: 34px;
+    color: #fff;
+    text-align: center;
     font-weight: bold;
-    margin: 20px;
-    letter-spacing: 2px; 
-}
-
-#sobremi .sobremi h2 span{
-    color:rgb(80, 112, 152);  
-}
-
-#sobremi .sobremi h3{
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
 }
 
 #sobremi .sobremi p{
     font-size: 14px;
     line-height: 25px;
-    color: rgba(86, 84, 84, 0.797);
+    color: #fff;
     margin-bottom: 12px;
 }
-#sobremi .sobremi a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border-radius: 30px;
-    padding: 10px 20px;
-    border: 1px solid rgb(1, 1, 1);
-    margin-top: 30px;
-    transition: 2.5s;
+
+#sobremi .sobremi .descargar-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+#sobremi .sobremi .descargar-cv a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 10px 10px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    transition: 2.5s;
+    font-size: 16px;
+}
+
+
 #sobremi .sobremi a:hover{
-    background-color:rgb(80, 112, 152);
+    background-color:rgb(250, 176, 111);
     color: #fff;
 }
+
+
+
+
+
+@media screen and (max-width:800px) {
+    
+    #sobremi{
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img{
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{
+        text-align: center;
+    }
+    #sobremi .sobremi h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+}
+
+
 
 
 
@@ -234,16 +339,12 @@ html{
 #servicios{
     padding: 100px 15px;
     text-align: center;
-    background-color: rgb(164, 163, 163);
 }
 
 #servicios .titulo-seccion{
-    font-size: 22px;
+    font-size: 24px;
     text-transform: uppercase;
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: rgb(164, 163, 163);
-    text-decoration-thickness:5px ;
+    color: #fff;
 }
 
 #servicios .fila{
@@ -255,7 +356,7 @@ html{
 
 #servicios .fila .servicio{
     max-width: 350px;
-    background-color: rgb(255, 249, 249);
+    background-color: rgb(71, 69, 69);
     padding: 30px;
     margin: 0 5px;
     border-right: 5px;
@@ -269,44 +370,63 @@ html{
 #servicios .fila .servicio h4{
     font-size: 22px;
     margin-bottom: 25px;
+    color: #fff;
 }
 #servicios .fila .servicio .icono{
     display: inline-block;
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background-color: rgb(164, 163, 163);
+    background-color: rgb(54, 54, 54);
     padding: 20px;
     margin-bottom: 25px;
-}
-
-#servicios .fila .servicio hr{
-    width: 30px;
-    margin: auto;
-    color: black;
-    margin-bottom: 25px;
-}
-
-#servicios .fila .servicio ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
 }
 
 #servicios .fila .servicio p{
     font-size: 14px;
     line-height: 22px;
+    color: #fff;
 }
 
+
+
+
+
+
+@media screen and (max-width:800px) {
+
+    #servicios{
+        padding: 50px 15px;
+    }
+    #servicios .fila{
+        display: block;
+    }
+    #servicios .fila .servicio{
+        margin: 10px auto;
+    }
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+  
+}
+
+
+
+
+
+
 .contenedor-skills{
-    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(36, 38, 38, 0.4)), url("./assets/imagenes/background.png");
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 100px 0;
     text-align: center;
+}
+
+.contenedor-skills h3 {
+    color: #fff;
+    font-size: 24px;
 }
 
 .contenedor-skills .skill{
@@ -319,6 +439,10 @@ html{
     justify-content: space-between;
 }
 
+.contenedor-skills .skill .info p{
+    color: #fff;
+}
+
 .contenedor-skills .skill .lista{
     display: inline-block;
     margin-right: 20px;
@@ -329,39 +453,51 @@ html{
 
 
 .contenedor-skills .skill .barra{
-    background-color: rgb(145, 143, 143);
+    background-color: rgb(242, 242, 242);
     width: 100%;
     height: 6px;
     margin: 10px 0;
 }
 
 .contenedor-skills .skill .barra-progreso1{
-    background-color: #fff;
+    background-color: rgb(250, 176, 111);
     width: 95%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso2{
-    background-color: #fff;
+    background-color: rgb(250, 176, 111);
     width: 95%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso3{
-    background-color: #fff;
+    background-color: rgb(250, 176, 111);
     width: 95%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso4{
-    background-color: #fff;
+    background-color: rgb(250, 176, 111);
     width: 95%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
+
+
+
+@media screen and (max-width:800px) {
+    
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+    
+}
+
+
 
 @keyframes progreso1{
     0%{
@@ -404,12 +540,9 @@ html{
 
 #portafolio .titulo-seccion{
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     text-transform: uppercase;
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: rgb(219, 178, 178);
-    text-decoration-thickness:5px ;  
+    color: #fff; 
 }
 #portafolio .fila{
     display: flex;
@@ -441,7 +574,7 @@ html{
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
-    color: rgb(80, 112, 152);
+    color: rgb(250, 176, 111);
     width: 100%;
     padding: 10px;
     opacity: 0;
@@ -456,6 +589,23 @@ html{
 
 
 
+@media screen and (max-width:800px) {
+   
+    #portafolio{
+        padding: 50px 0;
+    }
+    #portafolio .fila{
+        display: block;
+    }
+    #portafolio .fila .proyecto{
+        margin: 10px auto;
+    }
+
+
+}
+
+
+
 #contacto {
     padding: 100px 15px;
 }
@@ -465,10 +615,7 @@ html{
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: rgb(161, 159, 159) ;
-    text-decoration-thickness: 5px;
+    color: #fff;
 }
 
 #contacto .contenedor-form{
@@ -487,7 +634,7 @@ html{
 
 #contacto .contenedor-form input,
 #contacto .contenedor-form textarea{
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     border: none;
     border: 1px solid rgb(56, 56, 56);
@@ -512,9 +659,31 @@ html{
 }
 
 #contacto .btn-enviar:hover{
-    background-color: rgb(80, 112, 152);
+    background-color: rgb(250, 176, 111);
     color: #fff;
 }
+
+
+
+@media screen and (max-width:800px) {
+    
+    #contacto{
+        padding: 50px 15px;  
+    }
+    #contacto .contenedor-form .mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+
 
 footer{
     background-color: black;
@@ -531,87 +700,3 @@ footer a{
     font-size: 26px;
 }
 
-
-@media screen and (max-width:800px) {
-    .redes{
-        display: none;
-    }
-    nav{
-        display: none;
-    }
-    nav.responsive{
-        display: block;
-        background-color: rgba(0, 0, 0, .7);
-        width: 100%;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        padding: 10px 0;
-    }
-    nav.responsive ul{
-        display: block !important;
-        text-align: center;
-    }
-    nav.responsive ul li{
-        margin: 5px 0;
-    }
-    #icono-nav{
-        display: block;
-    }
-    #inicio .contenido .presentacion h2{
-        font-size: 40px;
-    }
-    #sobremi{
-        padding: 50px 0;
-        display: block;
-    }
-    #sobremi .contenedor-foto{
-        max-width: 200px;
-        margin: auto;
-    }
-    #sobremi .contenedor-foto img{
-        padding: 8px;
-    }
-    #sobremi .sobremi .titulo-seccion{
-        text-align: center;
-    }
-    #sobremi .sobremi h2{
-        font-size: 25px;
-        text-align: center;
-    }
-
-    #servicios{
-        padding: 50px 15px;
-    }
-    #servicios .fila{
-        display: block;
-    }
-    #servicios .fila .servicio{
-        margin: 10px auto;
-    }
-    .contenedor-skills{
-        padding: 50px 20px;
-    }
-    #portafolio{
-        padding: 50px 0;
-    }
-    #portafolio .fila{
-        display: block;
-    }
-    #portafolio .fila .proyecto{
-        margin: 10px auto;
-    }
-    #contacto{
-        padding: 50px 15px;  
-    }
-    #contacto .contenedor-form .mitad{
-        margin-bottom: 15px;
-        display: block;
-    }
-    #contacto .contenedor-form .mitad input{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-
-}
