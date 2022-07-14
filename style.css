@@ -163,8 +163,8 @@ body{
 	text-align: center;
 }
 .presentacion .presentacion-info .presentacion-info-heading {
-	font-size: 5rem;
-	font-weight: 500;
+	font-size: 4rem;
+	font-weight: 400;
 	color: whitesmoke;
 }
 .presentacion .presentacion-info .presentacion-info-subheading {
@@ -182,7 +182,7 @@ body{
 	color: white;
 	text-decoration: none;
 	letter-spacing: .6rem;
-    transition: 2.5s;
+    transition: .5s;
 	background-color: rgba(85, 85, 85, 0.534);
 }
 
@@ -248,10 +248,10 @@ body{
     margin: 25px;
     padding: 10px 10px;
     border: 2px solid #fff;
-    border-radius: 50px;
+    border-radius: 0px;
     color: #fff;
     font-weight: bold;
-    transition: 2.5s;
+    transition: .5s;
     font-size: 16px;
 }
 
@@ -317,7 +317,7 @@ body{
     padding: 30px;
     margin: 0 5px;
     border-right: 5px;
-    transition:2s; 
+    transition:.5s; 
 } 
 
 #servicios .fila .servicio:hover{
@@ -453,6 +453,13 @@ body{
     animation: progreso1 2s forwards;
 }
 
+.contenedor-skills .skill .barra-progreso6{
+    background-color: black;
+    width: 15%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+
 
 
 @media screen and (max-width:800px) {
@@ -504,6 +511,14 @@ body{
     }
 }
 
+@keyframes progreso6{
+    0%{
+        width: 0;}
+    100%{
+        width: 15%;
+    }
+}
+
 
 #portafolio{
     max-width: 1100px;
@@ -536,7 +551,7 @@ body{
     height: 100%;
     filter: grayscale(1);
     object-fit: cover;
-    transition: 2.5s;
+    transition: .5s;
 }
 
 #portafolio .fila .proyecto:hover img{
@@ -552,7 +567,7 @@ body{
     padding: 10px;
     opacity: 0;
     bottom: -40px;
-    transition: 2.5s;
+    transition: .5s;
 }
 
 #portafolio .fila .proyecto:hover .info{
@@ -605,12 +620,20 @@ body{
     justify-content: space-between;
 }
 
+#contacto textarea{
+    background-color: rgb(249, 249, 249);
+}
+
+#contacto value{
+    color: black;
+}
+
 #contacto .contenedor-form input,
 #contacto .contenedor-form textarea{
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0px;
     border: none;
-    border: 1px solid rgb(56, 56, 56);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #contacto .contenedor-form .mitad input{
@@ -625,7 +648,7 @@ body{
     display: block;
     margin: auto;
     cursor: pointer;
-    transition: 2.5s;
+    transition: .5s;
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
@@ -633,7 +656,7 @@ body{
 
 #contacto .btn-enviar:hover{
     background-color: black;
-    color: #fff;
+    color: gray;
 }
 
 
@@ -669,14 +692,14 @@ footer p{
     color: #fff;
     display: inline-block;
     margin: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
 footer i{
     text-decoration: none;
     color: #fff;
     display: inline-block;
     margin: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 footer a{
