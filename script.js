@@ -1,3 +1,4 @@
+
 function seleccionar(link){
     var opciones = document.querySelectorAll('#links a');
     opciones[0].className ="";
@@ -35,3 +36,12 @@ function efectohabilidades(){
         document.getElementById("ps").classList.add("barra-progreso4")
     }
 }
+
+
+const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
+const nav_list = document.querySelector('#nav-bar .nav-bar .nav-list');
+
+hamburger_icon.addEventListener('click', () => {
+	nav_list.classList.toggle('open');
+	hamburger_icon.classList.toggle('active');
+});

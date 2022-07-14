@@ -7,79 +7,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <title>Edison portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+    
+    
 </head>
 <body>
-    <section id="inicio">
-        
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <nav id="nav" class="">
-                      <ul id="links">
-                          <li><a href="#inicio" class="seleccionado" >INICIO</a></li>
-                          <li><a href="#sobremi">SOBRE MI</a></li>
-                          <li><a href="#servicios">SERVICIOS</a></li>
-                          <li><a href="#portafolio">PORTAFOLIO</a></li>
-                          <li><a href="#contacto" >CONTACTO</a></li>
-                      </ul> 
-                    </nav>
-
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                      <i class="fa-solid fa-bars"></i>
-                    </div>
-
-                    <div class="redes">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-             
-            </header>
-            <div class="contenedor-presentacion">
-                <div class="Foto">
-                    <img src="./assets/imagenes/Foto perfil1.png" alt="">
-                </div>
-                <div class="presentacion">
-                    <div class="bienvenida">
-                        <p >Bienvenidos</p>
-                    </div>
-                    <div class="bienvenida-nombre">
-                        <h2>Soy <span>Edison Parra</span> Desarrollador web</h2>
-                    </div>
-                    <div class="descripcion" >
-                    </div>
-                    <div class="hacia-portafolio">
-                        <a href="#portafolio">Ir a portafolio</a>
-                    </div>
-                     
-                </div>
-                
+    <section id="nav-bar" class="container">
+        <header class="nav-bar">
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
             </div>
-           
-                
+            <ul>
+                <li><a href="#inicio" class="seleccionado" >INICIO</a></li>
+                <li><a href="#sobremi">SOBRE MI</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#portafolio">PORTAFOLIO</a></li>
+                <li><a href="#contacto" >CONTACTO</a></li>
+            </ul>
+          </div>
+        </header>
+      </section>
+      <!-- End nav-bar  -->
+    
+      <!-- Hero Section  -->
+      <section id="presentacion" class="presentacion container">
+        <div class="presentacion-info">
+          <h1 class="presentacion-info-heading">Edison<br>Parra Ortiz</h1>
+          <p class="presentacion-info-subheading">Desarrollador Full-Stack </p>
+          <a href="#portafolio" type="button" class="presentacion-info-button">Portfolio</a>
         </div>
-
-
-    </section>
-    <section id ="sobremi">
+        <div class="foto-img">
+          <img src="./assets/imagenes/Foto perfil1.png" alt="">
+        </div>
+      </section>
+      <!-- End Hero Section  -->
+    
+    
+            
+  
+                
+      
+    <section id="sobremi">
         <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
+            <h class="titulo-seccion">SOBRE MI</h>
             <br>
             <br>
             <br>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum voluptatibus ad cum illo odio, aspernatur magni laudantium
-             error vitae pariatur expedita, reprehenderit quibusdam, veniam labore hic placeat obcaecati. Doloremque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum voluptatibus ad cum illo odio, aspernatur magni</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum voluptatibus ad cum illo odio, asp
+             error vitae pariatur expedita, reprehenderit quibusdam, veniam labore hic placeat obcaecati. Doloremque?.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum voluptatibus ad cum illo odio, asp
+             error vitae pariatur expedita, reprehenderit quibusdam, veniam labore hic placeat obcaecati. Doloremque?.</p>
+             <br>
+             <br>
+             
             <div class="descargar-cv">
                 <a href="#">Descargar CV</a>
             </div>
         </div>
+    </section>
+
 
     </section>
     <section id="servicios">
@@ -119,7 +112,7 @@
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>Html & Css</p>
-                <span class="porcentaje">95%</span>
+                <span class="porcentaje">85%</span>
             </div>
             <div class="barra">
                 <div id="html" class=""></div>   
@@ -128,7 +121,7 @@
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>Javascript</p>
-                <span class="porcentaje">95%</span>
+                <span class="porcentaje">80%</span>
             </div>
             <div class="barra">
                 <div id="js" class=""></div>   
@@ -137,7 +130,7 @@
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>Base de Datos</p>
-                <span class="porcentaje">95%</span>
+                <span class="porcentaje">70%</span>
             </div>
             <div class="barra">
                 <div id="bd" class=""></div>   
@@ -145,7 +138,7 @@
         </div>
         <div class="skill">
             <div class="info">
-                <p><span class="lista"></span>Photoshop</p>
+                <p><span class="lista"></span>Suite Adobe</p>
                 <span class="porcentaje">95%</span>
             </div>
             <div class="barra">
@@ -205,7 +198,7 @@
 
     </section>
     <footer>
-        <p>Todos los derechos reservados - 2022</p>
+        <p>Todos los derechos reservados<i class="fa-solid fa-copyright"></i>  2022</p>
         <div class="redes">
             <a><i class="fa-brands fa-facebook"></i></a>
             <a><i class="fa-brands fa-instagram"></i></a>
