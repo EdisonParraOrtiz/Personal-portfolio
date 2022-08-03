@@ -306,7 +306,7 @@ body{
 
 #servicios .fila{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1100px;
     margin: 30px auto;
 }
@@ -343,6 +343,7 @@ body{
     font-size: 14px;
     line-height: 22px;
     color: #fff;
+    text-align: justify;
 }
 
 
@@ -420,42 +421,49 @@ body{
 
 .contenedor-skills .skill .barra-progreso1{
     background-color: black;
-    width: 95%;
+    width: 90%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso2{
     background-color: black;
-    width: 95%;
+    width: 70%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso3{
     background-color: black;
-    width: 95%;
+    width: 70%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso4{
     background-color: black;
-    width: 95%;
+    width: 90%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso5{
     background-color: black;
-    width: 15%;
+    width: 90%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
 .contenedor-skills .skill .barra-progreso6{
     background-color: black;
-    width: 15%;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+
+.contenedor-skills .skill .barra-progreso7{
+    background-color: black;
+    width: 85%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
@@ -472,50 +480,65 @@ body{
 
 
 
-@keyframes progreso1{
+@keyframes barra-progreso1{
     0%{
-        width: 0;}
+        width: 0;
+    }
     100%{
-        width: 85%;
+        width: 90%;
     }
 }
 
-@keyframes progreso2{
+@keyframes barra-progreso2{
     0%{
-        width: 0;}
-    100%{
-        width: 80%;
+        width: 0;
     }
-}
-
-@keyframes progreso3{
-    0%{
-        width: 0;}
     100%{
         width: 70%;
     }
 }
 
-@keyframes progreso4{
+@keyframes barra-progreso3{
     0%{
-        width: 0;}
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes barra-progreso4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes barra-progreso5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes barra-progreso6{
+    0%{
+        width: 0;
+    }
     100%{
         width: 95%;
     }
 }
-@keyframes progreso5{
-    0%{
-        width: 0;}
-    100%{
-        width: 15%;
-    }
-}
 
-@keyframes progreso6{
+@keyframes barra-progreso7{
     0%{
-        width: 0;}
+        width: 0;
+    }
     100%{
-        width: 15%;
+        width: 85%;
     }
 }
 
@@ -699,7 +722,7 @@ footer i{
     color: #fff;
     display: inline-block;
     margin: 5px;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 footer a{
@@ -709,4 +732,14 @@ footer a{
     margin: 5px;
     font-size: 26px;
 }
+
+
+footer h1{
+    font-size: 12px;
+}
+
+footer span{
+    font-size: 16px;
+}
+
 
